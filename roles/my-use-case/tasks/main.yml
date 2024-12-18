@@ -7,7 +7,6 @@
   vars:
     operator_mode: "classicFullStack"  
     log_monitoring: "oneagent"
-    dt_operator_release: "1.2.2"
     cluster_name: power_dashboarding
 
 
