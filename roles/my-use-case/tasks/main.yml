@@ -5,13 +5,6 @@
 - include_role:
     name: dt-operator
 
-- name: Install Monaco
-  include_role:
-    name: monaco-v2
-
-- include_role:
-    name: monaco
-
 - include_role:
     name: app-easytrade
   vars:
