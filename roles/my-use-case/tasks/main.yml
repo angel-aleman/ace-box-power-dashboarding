@@ -4,6 +4,12 @@
 
 - include_role:
     name: dt-operator
+  vars:
+    operator_mode: "cloudNativeFullStack"  
+    log_monitoring: "oneagent"
+    dt_operator_release: "1.2.2"
+    cluster_name: power_dashboarding
+
 
 - include_role:
     name: app-easytrade
