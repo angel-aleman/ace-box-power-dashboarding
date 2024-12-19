@@ -6,18 +6,23 @@
     name: dt-operator
   vars:
     operator_mode: "classicFullStack"  
+    dt_operator_release: "v1.4.0"
     log_monitoring: "oneagent"
     cluster_name: power_dashboarding
 
-
 - include_role:
     name: app-easytrade
-  vars:
-    manifest_strategy: "static" # static or fetch_latest: static will use the static files from the app-easytrade role, dynamic will clone the EasyTrade repository with the latest files. Attention: This would break the existing deployments if the EasyTrade repository is updated.
 
-- include_role:
-    name: app-easytrade
-    tasks_from: apply-dt-configuration
+#- include_role:
+#    name: monaco
+
+#- name: Install Monaco
+#  include_role:
+#    name: monaco-v2
+
+#- include_role:
+#    name: app-easytrade
+#    tasks_from: apply-dt-configuration
 
 - include_role:
     name: dashboard
